@@ -1,0 +1,57 @@
+name: daily index
+
+# 01:30 UTC — after the previous UTC day has closed and settled, with enough
+# slack that a slow explorer does not push the run into the next day.
+on:
+  schedule:
+    - cron: '30 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-index
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Collect
+        # No retry-on-failure. A failed run leaves the day missing, which the
+        # next run fixes; a retried half-run could commit a partial day, which
+        # nothing fixes because the store never rewrites history.
+        run: node daily.mjs
+
+      - name: Rebuild page
+        run: node page.mjs
+
+      - name: Commit
+        run: |
+          git config user.name  "cascade-bot"
+          git config user.email "cascade-bot@users.noreply.github.com"
+          if git diff --quiet -- data/ index.html; then
+            echo "no change"
+            exit 0
+          fi
+          LATEST=$(node -e "const d=require('./data/index.json');console.log(d.to)")
+          ROLL=$(node -e "
+            const d=require('./data/index.json');
+            const r=d.days.slice(-30).reduce((a,x)=>a+x.usd,0);
+            console.log('\$'+(r/1e6).toFixed(2)+'M')")
+          git add data/ index.html
+          git commit -m "index: through ${LATEST} — 30d rolling ${ROLL}"
+          git push
+
+      # The point of committing the data rather than serving it from a
+      # database: the git history is the tamper-evident record. Anyone can
+      # check that a past day was not quietly revised after the fact, which is
+      # the one property an index like this has to have.

@@ -1,0 +1,7 @@
+node_modules/
+*.log
+series_*.json
+rolling_*.json
+band_*.json
+daily_usd.json
+index_x.json

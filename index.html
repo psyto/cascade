@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DeFi Liquidation Index — 2026-08-16</title>
+<style>
+:root{--ground:#E7EDEF;--surface:#FCFEFE;--surface-2:#F1F6F7;--ink:#0F252C;--body:#2C444C;
+--muted:#5F7883;--hair:#C8D6DA;--hair-soft:#DCE6E9;--accent:#BE5127;--accent-soft:#BE512714;--deep:#0B4F6C}
+@media (prefers-color-scheme:dark){:root{--ground:#071519;--surface:#0D2028;--surface-2:#112B34;
+--ink:#E2EDEF;--body:#B6CBD1;--muted:#7E9AA4;--hair:#1F404A;--hair-soft:#183440;
+--accent:#E2794A;--accent-soft:#E2794A1F;--deep:#4FA6C6}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--body);font-size:16px;line-height:1.7;
+font-family:ui-serif,Georgia,"Hiragino Mincho ProN",serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:56px 24px 80px}
+h1,h2,.sans{font-family:ui-sans-serif,system-ui,"Hiragino Kaku Gothic ProN",sans-serif;color:var(--ink)}
+h1{font-size:clamp(26px,4.4vw,38px);letter-spacing:-.025em;font-weight:800;margin:0 0 8px;line-height:1.2}
+h2{font-size:19px;letter-spacing:-.015em;font-weight:750;margin:44px 0 12px}
+p{margin:0 0 14px} strong{color:var(--ink)}
+.mono{font-family:ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+.eyebrow{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.hero{background:var(--surface);border:1px solid var(--hair);border-radius:4px;padding:26px;margin:26px 0 0}
+.big{font-family:ui-sans-serif,system-ui,sans-serif;font-size:clamp(38px,8vw,64px);font-weight:800;
+letter-spacing:-.04em;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums}
+.sub{font-size:13px;color:var(--muted);margin-top:8px;font-family:ui-sans-serif,system-ui,sans-serif}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+background:var(--hair);border:1px solid var(--hair);border-radius:3px;overflow:hidden;margin-top:22px}
+.grid>div{background:var(--surface);padding:14px 16px}
+.k{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.v{font-size:21px;font-weight:750;color:var(--ink);letter-spacing:-.02em;
+font-family:ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:14px}
+th{font-family:ui-sans-serif,system-ui,sans-serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+color:var(--muted);text-align:left;font-weight:600;padding:0 10px 7px 0;border-bottom:1px solid var(--hair)}
+td{padding:8px 10px 8px 0;border-bottom:1px solid var(--hair-soft);font-variant-numeric:tabular-nums}
+td.n{text-align:right;font-family:ui-monospace,Menlo,monospace}
+svg{display:block;width:100%;height:auto;margin-top:14px}
+.note{font-size:12.5px;color:var(--muted);line-height:1.65}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--hair);font-size:12px;color:var(--muted)}
+code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px}
+</style></head><body><div class="wrap">
+
+<p class="eyebrow">DeFi Liquidation Index · updated 2026-08-17 22:20 UTC</p>
+<h1>30日ローリング清算指数</h1>
+
+<div class="hero">
+  <div class="big">$4.0M</div>
+  <div class="sub">直近30日に清算された債務の名目額 — 観測期間中の <strong>1 パーセンタイル</strong>／直近7日 $282k</div>
+</div>
+
+<div class="grid">
+  <div><div class="k">観測日数</div><div class="v">77</div></div>
+  <div><div class="k">累計名目額</div><div class="v">$334.9M</div></div>
+  <div><div class="k">イベント数</div><div class="v">14,283</div></div>
+  <div><div class="k">中央値の日</div><div class="v">$69k</div></div>
+  <div><div class="k">清算ゼロの日</div><div class="v">0 / 77</div></div>
+  <div><div class="k">未価格</div><div class="v">4.5%</div></div>
+</div>
+
+<h2 class="sans">推移</h2>
+<svg viewBox="0 0 880 240" role="img" aria-label="30日ローリング清算指数の推移"><line x1="62" y1="210.0" x2="862" y2="210.0" stroke="var(--hair-soft)"/><text x="54" y="213.5" text-anchor="end" font-size="9.5" fill="var(--muted)" font-family="ui-monospace,Menlo,monospace">$0</text><line x1="62" y1="161.5" x2="862" y2="161.5" stroke="var(--hair-soft)"/><text x="54" y="165.0" text-anchor="end" font-size="9.5" fill="var(--muted)" font-family="ui-monospace,Menlo,monospace">$250.0M</text><line x1="62" y1="113.0" x2="862" y2="113.0" stroke="var(--hair-soft)"/><text x="54" y="116.5" text-anchor="end" font-size="9.5" fill="var(--muted)" font-family="ui-monospace,Menlo,monospace">$500.0M</text><line x1="62" y1="64.5" x2="862" y2="64.5" stroke="var(--hair-soft)"/><text x="54" y="68.0" text-anchor="end" font-size="9.5" fill="var(--muted)" font-family="ui-monospace,Menlo,monospace">$750.0M</text><line x1="62" y1="16.0" x2="862" y2="16.0" stroke="var(--hair-soft)"/><text x="54" y="19.5" text-anchor="end" font-size="9.5" fill="var(--muted)" font-family="ui-monospace,Menlo,monospace">$1000.0M</text><path d="M 62 209.2 L 72.5 203.9 L 83.1 199.1 L 93.6 189.6 L 104.1 164.5 L 114.6 155.6 L 125.2 155.6 L 135.7 155.6 L 146.2 155.4 L 156.7 155.4 L 167.3 155.4 L 177.8 155.4 L 188.3 155.4 L 198.8 155.4 L 209.4 155.4 L 219.9 155.4 L 230.4 155.1 L 240.9 154.3 L 251.5 154.3 L 262.0 154.3 L 272.5 154.3 L 283.1 154.3 L 293.6 153.2 L 304.1 151.5 L 314.6 148.0 L 325.2 147.8 L 335.7 147.7 L 346.2 147.6 L 356.7 147.5 L 367.3 147.5 L 377.8 148.1 L 388.3 152.9 L 398.8 157.7 L 409.4 167.2 L 419.9 192.2 L 430.4 201.2 L 440.9 201.2 L 451.5 201.2 L 462.0 201.3 L 472.5 201.3 L 483.1 201.3 L 493.6 201.3 L 504.1 201.3 L 514.6 201.3 L 525.2 200.5 L 535.7 200.5 L 546.2 200.7 L 556.7 201.5 L 567.3 201.4 L 577.8 201.4 L 588.3 201.4 L 598.8 201.4 L 609.4 202.5 L 619.9 204.1 L 630.4 207.6 L 640.9 207.8 L 651.5 207.9 L 662.0 208.0 L 672.5 208.1 L 683.1 207.7 L 693.6 207.9 L 704.1 208.3 L 714.6 208.4 L 725.2 208.4 L 735.7 208.4 L 746.2 208.4 L 756.7 208.4 L 767.3 208.3 L 777.8 208.3 L 788.3 208.3 L 798.8 208.3 L 809.4 208.3 L 819.9 208.3 L 830.4 208.3 L 840.9 209.1 L 851.5 209.2 L 862.0 209.2 L 862.0 210 L 62 210 Z" fill="var(--accent)" opacity=".13"/><path d="M 62 209.2 L 72.5 203.9 L 83.1 199.1 L 93.6 189.6 L 104.1 164.5 L 114.6 155.6 L 125.2 155.6 L 135.7 155.6 L 146.2 155.4 L 156.7 155.4 L 167.3 155.4 L 177.8 155.4 L 188.3 155.4 L 198.8 155.4 L 209.4 155.4 L 219.9 155.4 L 230.4 155.1 L 240.9 154.3 L 251.5 154.3 L 262.0 154.3 L 272.5 154.3 L 283.1 154.3 L 293.6 153.2 L 304.1 151.5 L 314.6 148.0 L 325.2 147.8 L 335.7 147.7 L 346.2 147.6 L 356.7 147.5 L 367.3 147.5 L 377.8 148.1 L 388.3 152.9 L 398.8 157.7 L 409.4 167.2 L 419.9 192.2 L 430.4 201.2 L 440.9 201.2 L 451.5 201.2 L 462.0 201.3 L 472.5 201.3 L 483.1 201.3 L 493.6 201.3 L 504.1 201.3 L 514.6 201.3 L 525.2 200.5 L 535.7 200.5 L 546.2 200.7 L 556.7 201.5 L 567.3 201.4 L 577.8 201.4 L 588.3 201.4 L 598.8 201.4 L 609.4 202.5 L 619.9 204.1 L 630.4 207.6 L 640.9 207.8 L 651.5 207.9 L 662.0 208.0 L 672.5 208.1 L 683.1 207.7 L 693.6 207.9 L 704.1 208.3 L 714.6 208.4 L 725.2 208.4 L 735.7 208.4 L 746.2 208.4 L 756.7 208.4 L 767.3 208.3 L 777.8 208.3 L 788.3 208.3 L 798.8 208.3 L 809.4 208.3 L 819.9 208.3 L 830.4 208.3 L 840.9 209.1 L 851.5 209.2 L 862.0 209.2" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/><circle cx="862.0" cy="209.2" r="4" fill="var(--accent)"/><text x="62.0" y="226" text-anchor="start" font-size="9.5" fill="var(--muted)" font-family="ui-monospace,Menlo,monospace">06-01</text><text x="462.0" y="226" text-anchor="middle" font-size="9.5" fill="var(--muted)" font-family="ui-monospace,Menlo,monospace">07-09</text><text x="862.0" y="226" text-anchor="end" font-size="9.5" fill="var(--muted)" font-family="ui-monospace,Menlo,monospace">08-16</text></svg>
+
+<h2 class="sans">最大の日</h2>
+<table><thead><tr><th>日付</th><th style="text-align:right">名目額</th><th style="text-align:right">件数</th></tr></thead><tbody>
+<tr><td class="mono">2026-06-05</td><td class="n">$129.2M</td><td class="n">4,384</td></tr>
+<tr><td class="mono">2026-06-04</td><td class="n">$48.9M</td><td class="n">1,782</td></tr>
+<tr><td class="mono">2026-06-06</td><td class="n">$46.1M</td><td class="n">784</td></tr>
+<tr><td class="mono">2026-06-02</td><td class="n">$27.2M</td><td class="n">2,148</td></tr>
+<tr><td class="mono">2026-06-03</td><td class="n">$24.8M</td><td class="n">1,053</td></tr>
+<tr><td class="mono">2026-06-25</td><td class="n">$18.0M</td><td class="n">662</td></tr>
+<tr><td class="mono">2026-06-24</td><td class="n">$8.7M</td><td class="n">538</td></tr>
+<tr><td class="mono">2026-06-23</td><td class="n">$5.9M</td><td class="n">77</td></tr>
+</tbody></table>
+
+<h2 class="sans">ソース</h2>
+<table><thead><tr><th>チェーン / プロトコル</th><th style="text-align:right">件数</th><th style="text-align:right">名目額</th></tr></thead><tbody>
+<tr><td>ethereum Aave V3</td><td class="n">2,291</td><td class="n">$185.1M</td></tr>
+<tr><td>base Morpho Blue</td><td class="n">7,623</td><td class="n">$101.6M</td></tr>
+<tr><td>ethereum Morpho Blue</td><td class="n">1,006</td><td class="n">$34.0M</td></tr>
+<tr><td>arbitrum Aave V3</td><td class="n">1,777</td><td class="n">$3.6M</td></tr>
+<tr><td>base Aave V3</td><td class="n">1,178</td><td class="n">$3.6M</td></tr>
+<tr><td>ethereum Spark</td><td class="n">323</td><td class="n">$3.6M</td></tr>
+<tr><td>ethereum Compound V3</td><td class="n">36</td><td class="n">$3.0M</td></tr>
+<tr><td>base Compound V3</td><td class="n">49</td><td class="n">$376k</td></tr>
+</tbody></table>
+
+<h2 class="sans">自分で確かめる</h2>
+<p class="note">この指数は再現できます。すべての入力はオンチェーンで、収集器はゼロ依存です。</p>
+<p class="note"><code>git clone … &amp;&amp; node index.mjs 2026-08-16 2026-08-17</code></p>
+<p class="note">値付けは各清算イベントの返済債務額を、債務トークンの <code>decimals()</code> で割ったもの。USDペッグはシンボル一致で等価、ETH系は Chainlink ETH/USD で換算、それ以外は<strong>推測せず未価格として計上</strong>します。上限に当たった応答は切り捨てずに再分割し、値が取れなければ<strong>止まります</strong>。</p>
+<p class="note"><strong>data/ はコミットされています。</strong>過去の日が後から書き換えられていないことは git の履歴で確認できます。この種の指数に唯一必須の性質です。</p>
+
+<footer>
+Sources: ethereum Aave V3 · base Morpho Blue · ethereum Morpho Blue · arbitrum Aave V3 · base Aave V3 · ethereum Spark · ethereum Compound V3 · base Compound V3.
+価格は Chainlink ETH/USD <code>0x5f4eC3Df…5c5b8419</code> のオンチェーン更新、各 00:00 UTC 直前の値。
+未価格 644 件 (4.5%)。
+</footer>
+</div></body></html>
