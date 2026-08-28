@@ -1,7 +1,7 @@
 {
- "updated": "2026-08-27T11:57:23.207Z",
+ "updated": "2026-08-28T13:24:41.805Z",
  "from": "2026-06-01",
- "to": "2026-08-26",
+ "to": "2026-08-27",
  "days": [
   {
    "date": "2026-06-01",
@@ -611,46 +611,53 @@
    "n": 99,
    "unpriced": 73,
    "eth": 2502.94
+  },
+  {
+   "date": "2026-08-27",
+   "usd": 36,
+   "n": 123,
+   "unpriced": 21,
+   "eth": 2514.43872203
   }
  ],
  "by_source": {
   "ethereum Aave V3": {
-   "usd": 190246075,
-   "n": 2403
+   "usd": 190246082,
+   "n": 2489
   },
   "ethereum Spark": {
    "usd": 3582408,
    "n": 324
   },
   "ethereum Morpho Blue": {
-   "usd": 70278356,
-   "n": 1094
+   "usd": 70278372,
+   "n": 1097
   },
   "ethereum Compound V3": {
    "usd": 3040851,
    "n": 36
   },
   "base Aave V3": {
-   "usd": 3615115,
-   "n": 1289
+   "usd": 3615123,
+   "n": 1290
   },
   "base Morpho Blue": {
    "usd": 101622028,
-   "n": 7890
+   "n": 7909
   },
   "base Compound V3": {
    "usd": 376454,
    "n": 49
   },
   "arbitrum Aave V3": {
-   "usd": 3804339,
-   "n": 1837
+   "usd": 3804344,
+   "n": 1851
   }
  },
  "unpriced_by_symbol": {
-  "WBTC": 103,
+  "WBTC": 104,
   "EURC": 94,
-  "cbBTC": 88,
+  "cbBTC": 89,
   "LINK": 17,
   "UNI": 1,
   "RPL": 1,
@@ -671,7 +678,7 @@
   "USD₮0": 288,
   "EURS": 2,
   "ARB": 3,
-  "?": 340,
+  "?": 359,
   "ETHx": 1,
   "wNXM": 14
  },
