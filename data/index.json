@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-05T06:15:13.765Z",
+ "updated": "2026-09-06T06:27:40.674Z",
  "from": "2026-06-01",
- "to": "2026-09-04",
+ "to": "2026-09-05",
  "days": [
   {
    "date": "2026-06-01",
@@ -674,6 +674,13 @@
    "n": 14,
    "unpriced": 4,
    "eth": 2451.2161264
+  },
+  {
+   "date": "2026-09-05",
+   "usd": 807,
+   "n": 11,
+   "unpriced": 3,
+   "eth": 2481.2094
   }
  ],
  "by_source": {
@@ -686,8 +693,8 @@
    "n": 326
   },
   "ethereum Morpho Blue": {
-   "usd": 70291343,
-   "n": 1099
+   "usd": 70291912,
+   "n": 1104
   },
   "ethereum Compound V3": {
    "usd": 3040851,
@@ -699,15 +706,15 @@
   },
   "base Morpho Blue": {
    "usd": 101622040,
-   "n": 8104
+   "n": 8105
   },
   "base Compound V3": {
    "usd": 376454,
    "n": 49
   },
   "arbitrum Aave V3": {
-   "usd": 3809429,
-   "n": 1868
+   "usd": 3809667,
+   "n": 1873
   }
  },
  "unpriced_by_symbol": {
@@ -727,13 +734,13 @@
   "FXUSD": 19,
   "vTAO-Test": 5,
   "MAI": 1,
-  "jEUR": 7,
+  "jEUR": 8,
   "verUSDC": 4,
   "ARGt": 3,
   "EURA": 1,
   "USD₮0": 288,
   "EURS": 2,
-  "ARB": 3,
+  "ARB": 5,
   "?": 564,
   "ETHx": 1,
   "wNXM": 14
